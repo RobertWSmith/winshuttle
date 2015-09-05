@@ -9,6 +9,7 @@ from abc import ABC
 import os
 
 
+
 class WinshuttleStudio(ABC):
     """\
     Base class for all Winshuttle Studio applications (Transaction & Query)
@@ -54,6 +55,7 @@ class WinshuttleStudio(ABC):
                 return arg
 
 
+
 class WinshuttleSortKey(ABC):
 
     _sort_key = 9999
@@ -74,6 +76,7 @@ class WinshuttleSortKey(ABC):
 
     def __lt__(self, other):
         return self.sort_key < other.sort_key
+
 
 
 class WinshuttleTokenValue(ABC):
@@ -146,3 +149,5 @@ class WinshuttleTokenValue(ABC):
     @rtv_fmt.setter
     def rtv_fmt(self, x):
         self._rtv_fmt = x
+
+

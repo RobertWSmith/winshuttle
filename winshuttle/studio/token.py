@@ -12,6 +12,8 @@ import os
 #import urllib.parse as urlp
 import collections
 
+#WinshuttleRuntimeTuple = collections.namedtuple('WinshuttleRuntimeTuple', field_names = ['table', 'field', 'values'])
+
 
 class StringTokenValue(WinshuttleTokenValue):
 
